@@ -1,0 +1,4 @@
+enum ItemCategory {
+  jatuhan,
+  tangkapan,
+}
