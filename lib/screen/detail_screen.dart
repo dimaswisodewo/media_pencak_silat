@@ -27,6 +27,9 @@ class DetailScreen extends StatelessWidget {
           child: Column(children: [
             VideoPlayer(url: videoUrl),
           ]),
+          // child: Expanded(
+          //   child: VideoPlayer(url: videoUrl),
+          // ),
         ),
       ),
     );

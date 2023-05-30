@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:media_pencak_silat/constants.dart';
+import 'package:media_pencak_silat/enums.dart';
 import 'package:media_pencak_silat/widget/list_item.dart';
 import 'package:media_pencak_silat/model/item.dart';
 import 'package:media_pencak_silat/static_views.dart';
@@ -14,7 +15,9 @@ class User {
 }
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+  const HomeScreen({required this.category, super.key});
+
+  final ItemCategory category;
 
   @override
   State<StatefulWidget> createState() {
@@ -23,11 +26,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  final List<Item> _users = [
-    ...Constants.jatuhanList,
-    ...Constants.tangkapanList,
-  ];
-
+  List<Item> _users = [];
   List<Item> _foundedItems = [];
 
   @override
@@ -35,6 +34,10 @@ class _HomeScreenState extends State<HomeScreen> {
     super.initState();
 
     setState(() {
+      _users = widget.category == ItemCategory.jatuhan
+          ? [...Constants.jatuhanList]
+          : [...Constants.tangkapanList];
+
       _foundedItems = _users;
     });
   }

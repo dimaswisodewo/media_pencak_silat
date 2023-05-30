@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 // import 'package:flutter/services.dart';
-import 'package:media_pencak_silat/screen/home_screen.dart';
+import 'package:media_pencak_silat/screen/start_screen.dart';
 
 void main() {
   // WidgetsFlutterBinding.ensureInitialized();
@@ -38,6 +38,6 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return const HomeScreen();
+    return const StartScreen();
   }
 }

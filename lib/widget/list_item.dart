@@ -54,7 +54,7 @@ class ListItem extends StatelessWidget {
               thickness: 3.0,
               color: item.category == ItemCategory.jatuhan
                   ? Colors.green
-                  : Colors.amber,
+                  : Colors.red,
             ),
           ),
           Expanded(
