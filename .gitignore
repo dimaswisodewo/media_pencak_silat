@@ -45,3 +45,4 @@ app.*.map.json
 
 # Additional files
 /android/gradle/wrapper/gradle-7.5-all.zip
+*.mp4
