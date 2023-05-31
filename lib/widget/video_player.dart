@@ -22,7 +22,7 @@ class _VideoPlayerState extends State<VideoPlayer> {
   void initState() {
     super.initState();
     // Init video player controller
-    videoPlayerController = VideoPlayerController.network(
+    videoPlayerController = VideoPlayerController.asset(
       widget.url,
     );
 
@@ -32,6 +32,7 @@ class _VideoPlayerState extends State<VideoPlayer> {
         videoPlayerController: videoPlayerController!,
         autoPlay: true,
         looping: false,
+        aspectRatio: 16 / 9,
       );
 
       // Init player widget

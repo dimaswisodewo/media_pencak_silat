@@ -15,7 +15,7 @@ class DetailScreen extends StatelessWidget {
         title: Text(
           title,
           style: const TextStyle(
-            fontSize: 18.0,
+            fontSize: 14.0,
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -27,9 +27,6 @@ class DetailScreen extends StatelessWidget {
           child: Column(children: [
             VideoPlayer(url: videoUrl),
           ]),
-          // child: Expanded(
-          //   child: VideoPlayer(url: videoUrl),
-          // ),
         ),
       ),
     );

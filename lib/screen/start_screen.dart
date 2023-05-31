@@ -27,7 +27,7 @@ class StartScreen extends StatelessWidget {
       appBar: StaticViews.makeAppBar(
         title: const Text(
           "Media Pembelajaran Pencak Silat",
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
         ),
       ),
       body: Container(

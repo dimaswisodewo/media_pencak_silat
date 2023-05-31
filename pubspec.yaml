@@ -74,6 +74,19 @@ flutter:
     - assets/images/jatuhan_tiga.png
     - assets/images/tangkapan_dalam.png
     - assets/images/tangkapan_luar.png
+    # Videos
+    - assets/videos/jatuhan_circle.mp4
+    - assets/videos/guntingan_kaki.mp4
+    - assets/videos/guntingan_pinggang.mp4
+    - assets/videos/jatuhan_dua.mp4
+    - assets/videos/jatuhan_empat.mp4
+    - assets/videos/jatuhan_lima.mp4
+    - assets/videos/jatuhan_punggung.mp4
+    - assets/videos/jatuhan_satu.mp4
+    - assets/videos/jatuhan_saweran.mp4
+    - assets/videos/jatuhan_tiga.mp4
+    - assets/videos/tangkapan_dalam.mp4
+    - assets/videos/tangkapan_luar.mp4
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
